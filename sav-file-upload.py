@@ -13,19 +13,19 @@ if file is not None:
 
 
 
-# #To convert to a string based IO:
+#To convert to a string based IO:
 
-# stringio = StringIO(file.getvalue().decode("latin1")) 
+stringio = StringIO(file.getvalue().decode("latin1")) 
 
-# st.write(stringio)
+st.write(stringio)
 
 
 
-# #To read file as string:
+#To read file as string:
 
-# string_data = stringio.read()
+string_data = stringio.read()
 
-# st.write(string_data)
+st.write(string_data)
 
 
 
