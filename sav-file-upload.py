@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import StringIO
+import pyreadstat
 
 #Following is the code
 file = st.file_uploader("Please choose a file")
