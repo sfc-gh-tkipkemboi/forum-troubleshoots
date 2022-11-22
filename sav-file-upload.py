@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 #Following is the code
-file = st.file_uploader(“Please choose a file”)
+file = st.file_uploader("Please choose a file")
 
 if file is not None:
   #To read file as bytes
