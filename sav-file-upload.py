@@ -8,36 +8,33 @@ file = st.file_uploader("Please choose a file")
 
 if file is not None:
   #To read file as bytes
-
   bytes_data = file.getvalue()
+  
+  #To read file as bytes:
+  df= pd.read_spss(file)
 
   st.write(bytes_data)
 
 
 
-#To convert to a string based IO:
+  # To convert to a string based IO:
+  stringio = StringIO(file.getvalue().decode("latin1")) 
 
-stringio = StringIO(file.getvalue().decode("latin1")) 
-
-st.write(stringio)
-
-
-
-#To read file as string:
-
-string_data = stringio.read()
-
-st.write(string_data)
+  st.write(stringio)
 
 
 
-#Can be used wherever a "file-like" object is accepted:
+  # To read file as string
+  string_data = stringio.read()
 
-df= pd.read_spss(file)#To read file as bytes:
+  st.write(string_data)
 
-bytes_data = file.getvalue()
 
-st.write(bytes_data)
+
+  # Can be used wherever a "file-like" object is accepted
+  bytes_data = file.getvalue()
+
+  st.write(bytes_data)
 
 
 
