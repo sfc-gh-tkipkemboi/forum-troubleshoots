@@ -30,13 +30,13 @@ st.write(string_data)
 
 
 
-# #Can be used wherever a "file-like" object is accepted:
+#Can be used wherever a "file-like" object is accepted:
 
-# df= pd.read_spss(file)#To read file as bytes:
+df= pd.read_spss(file)#To read file as bytes:
 
-# bytes_data = file.getvalue()
+bytes_data = file.getvalue()
 
-# st.write(bytes_data)
+st.write(bytes_data)
 
 
 
